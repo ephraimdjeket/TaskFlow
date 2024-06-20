@@ -1,0 +1,124 @@
+:root {
+    --primary-color: #656565;
+    --button-color: #3d3d3d;
+}
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.lightmode {
+    color: white;
+}
+
+.moon, .sun {
+    cursor: pointer;
+}
+
+.moon {
+    color: var(--primary-color);
+}
+
+.sun {
+    color: white;
+}
+
+.x {
+    cursor: pointer;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    gap: 3rem;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+
+}
+
+/* Main text section */
+
+.task-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: var(--primary-color);
+}
+
+.task-section > h1 {
+    font-size: clamp(1.5rem, 15vw, 5rem);
+    font-weight: 700;
+}
+
+.task-section > h2 {
+    font-size: clamp(0.5rem, 6vw, 1.5rem);
+    font-weight: 400;
+    
+}
+
+/* Form Section */
+
+.hidden {
+    display: none;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0rem;
+}
+
+#task-input, #task-button {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+}
+
+#task-button {
+    border: none;
+    background-color: var(--button-color);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+#task-button:hover {
+    background-color: var(--primary-color);
+    transition: 0.3s ease-out;
+}
+
+.error-message {
+    display: none;
+    font-weight: 700;
+    color: red;
+    padding: 0.5rem;
+}
+
+/* Task list */
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.3rem 0rem;
+}

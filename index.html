@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalistic To Do App</title>
+    <!-- CSS stylesheet -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Javascript -->
+     <script src="index.js" type="module"></script>
+     <script src="handlers/handlers.js" type="module"></script>
+     <script src="/darklight/darklight.js" type="module"></script>
+     <!-- Google font-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <svg class="w-6 h-6 text-gray-800 dark:text-white moon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M11.675 2.015a.998.998 0 0 0-.403.011C6.09 2.4 2 6.722 2 12c0 5.523 4.477 10 10 10 4.356 0 8.058-2.784 9.43-6.667a1 1 0 0 0-1.02-1.33c-.08.006-.105.005-.127.005h-.001l-.028-.002A5.227 5.227 0 0 0 20 14a8 8 0 0 1-8-8c0-.952.121-1.752.404-2.558a.996.996 0 0 0 .096-.428V3a1 1 0 0 0-.825-.985Z" clip-rule="evenodd"/>
+              </svg>
+              <svg class="w-6 h-6 text-gray-800 dark:text-white sun hidden" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M13 3a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0V3ZM6.343 4.929A1 1 0 0 0 4.93 6.343l1.414 1.414a1 1 0 0 0 1.414-1.414L6.343 4.929Zm12.728 1.414a1 1 0 0 0-1.414-1.414l-1.414 1.414a1 1 0 0 0 1.414 1.414l1.414-1.414ZM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm-9 4a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2H3Zm16 0a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2h-2ZM7.757 17.657a1 1 0 1 0-1.414-1.414l-1.414 1.414a1 1 0 1 0 1.414 1.414l1.414-1.414Zm9.9-1.414a1 1 0 0 0-1.414 1.414l1.414 1.414a1 1 0 0 0 1.414-1.414l-1.414-1.414ZM13 19a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0v-2Z" clip-rule="evenodd"/>
+              </svg>
+              
+              
+        </nav>
+    </header>
+    <section class="task-section">
+    <h1>TaskFlow</h1>
+    <h2>Your day, Simlified.</h2>
+    <h3><span class="day">Day</span> <span class="month">Month</span>  <span class="year">Year</span></h3>
+    <h3><span class="hour">00</span>:<span class="minute">00</span>:<span class="second">00</span></h3>
+</section>
+<section class="task-section">
+    <form>
+        <div class="form-group">
+        <label for="task-input" aria-label="hidden"><span class="hidden">.</span></label>
+        <input type="text" id="task-input" placeholder="Enter a task" required>
+    </div>
+    <div class="form-group">
+        
+        <input type="button" id="task-button" value="Add to list" required>
+        <div class="error-message"></div>
+    </div>
+    </form>
+</section>
+<section class="task-list">
+    <ul class="list">
+        <li>
+            Exercise outside in the park<svg class="w-6 h-6 x text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="m15 9-6 6m0-6 6 6m6-3a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+              </svg>
+        </li>
+        <li>
+            Shopping groceries<svg class="w-6 h-6 x text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="m15 9-6 6m0-6 6 6m6-3a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+              </svg>
+        </li>
+
+    </ul>
+</section>
+</body>
+</html>
