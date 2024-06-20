@@ -1,6 +1,8 @@
 # TaskFlow
 ![image](https://github.com/ephraimdjeket/TaskFlow/assets/45997915/efe87c8a-0c2c-4f8b-9f5c-24527f38fc3e)
 
+Live demo: https://taskflower.netlify.app/
+
 TaskFlow is a minimalistic to-do app designed to help you manage your daily tasks efficiently. Built with HTML, CSS, and JavaScript, TaskFlow allows you to add, delete, and complete tasks, providing a simple yet effective way to stay organized.
 
 # Features
