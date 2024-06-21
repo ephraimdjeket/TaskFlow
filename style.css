@@ -12,7 +12,7 @@
 ul {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: left;
     list-style: none;
 }
 
@@ -22,6 +22,10 @@ ul {
 
 .lightmode {
     color: white;
+}
+
+.darkmode {
+    color: var(--primary-color);
 }
 
 .moon, .sun {
@@ -54,6 +58,7 @@ body {
     font-style: normal;
     font-variation-settings:
       "slnt" 0;
+      transition: background-color 0.5s ease;
 
 }
 
@@ -67,13 +72,14 @@ body {
 }
 
 .task-section > h1 {
-    font-size: clamp(1.5rem, 15vw, 5rem);
+    font-size: clamp(1.5rem, 10vw, 4rem);
     font-weight: 700;
 }
 
 .task-section > h2 {
-    font-size: clamp(0.5rem, 6vw, 1.5rem);
+    font-size: clamp(1rem, 4vw, 1.5rem);
     font-weight: 400;
+    text-decoration: line-through;
     
 }
 
@@ -121,4 +127,5 @@ li {
     align-items: center;
     gap: 0.5rem;
     padding: 0.3rem 0rem;
+    cursor: pointer;
 }
